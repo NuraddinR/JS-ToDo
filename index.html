@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>To-Do</title>
+</head>
+<body>
+    <h1>To Do</h1>
+    <div class="container">
+        <div class="header">
+            <button id="doneAll"><img class="doneAllSvg" src="./assets/down.svg" alt=""></button>
+            <input type="text" id="input" placeholder="What needs to be done?">
+        </div>
+
+        <ul id="list">
+            <li>
+                <div class="li-left">
+                    <input class="toggle" type="checkbox">
+                    <span class="notchecked">Task 1</span>
+                </div>
+                <button class="deleteBtn"><img class="deleteSvg" src="./assets/x.svg" alt=""></button>
+            </li>
+            <li>
+                <div class="li-left">
+                    <input class="toggle" type="checkbox">
+                    <span class="notchecked">Task 2</span>
+                </div>
+                <button class="deleteBtn"><img class="deleteSvg" src="./assets/x.svg" alt=""></button>
+            </li>
+        </ul>
+
+        <div class="footer">
+            <span id="count"></span>
+            <div class="footer-center">
+                <button id="showAll" class="selected">All</button>
+                <button id="showActive">Active</button>
+                <button id="showCompleted">Completed</button>
+            </div>
+            <div class="clear">
+                <button id="clearCompleted">Clear completed</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Click to edit a todo</p>
+        <p>Created by <a href="#"> Nuraddin Rzayev </a></p>
+        <a href="#">Source Code</a>
+    </footer>
+</body>
+</html>
